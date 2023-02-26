@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account"
+    android:background="@color/grey"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/background"
+
+            >
+
+            <ImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_background"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textview_show_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_photo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:hint="Loading......"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+        </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:padding="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_margin="15dp"
+         android:background="@color/white">
+         <ImageView
+             android:id="@+id/profile_icon"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:background="@drawable/user"
+             />
+         <TextView
+             android:id="@+id/textview_show_fullname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/profile_icon"
+             android:layout_marginStart="50dp"
+             android:hint="Loading"
+             android:textSize="18sp"
+             />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:id="@+id/view1"
+             android:layout_marginTop="15dp"
+             android:layout_below="@+id/textview_show_fullname"
+             android:background="@color/grey"
+             />
+
+         <ImageView
+             android:id="@+id/phone_icon11"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:background="@drawable/phone"
+             android:layout_below="@+id/view1"
+             android:layout_marginTop="20dp"
+             />
+
+         <TextView
+             android:id="@+id/textview_show_phone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/phone_icon11"
+             android:layout_marginStart="50dp"
+             android:layout_marginTop="60dp"
+             android:hint="Loading"
+             android:textSize="18sp" />
+
+         <View
+             android:id="@+id/view2"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="15dp"
+             android:layout_below="@+id/textview_show_phone"
+             android:background="@color/grey"
+             />
+
+         <ImageView
+             android:id="@+id/email_icon"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:background="@drawable/email"
+             android:layout_below="@+id/view2"
+             android:layout_marginTop="20dp"
+             />
+
+         <TextView
+             android:id="@+id/textview_show_email"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/email_icon"
+             android:layout_marginStart="50dp"
+             android:layout_marginTop="120dp"
+             android:hint="Loading"
+             android:textSize="18sp" />
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="15dp"
+             android:layout_below="@+id/textview_show_email"
+             android:background="@color/grey"
+             />
+
+
+     </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
